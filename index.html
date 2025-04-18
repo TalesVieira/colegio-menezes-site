@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Menezes I</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/carrossel.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="img/iconedapagina.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="topo-cabecalho">
+            <div class="contatos">
+                <img src="img/telephone.svg" alt="icone telefone de contato">
+                <span class="contato-info">3442-4767</span>
+                <img src="img/envelope.svg" alt="icone email de contato">
+                <span class="contato-info">email/Colegiomenezes1@hotmail.com</span>
+            </div>
+            <div class="social-icones">
+                <a href="https://www.facebook.com/colegiomenezes1/">
+                    <img src="img/facebook.svg" alt="icone do facebook">
+                </a>
+                <a href="https://www.instagram.com/colegiomenezes1/">
+                    <img src="img/instagram.svg" alt="icone do instagram">
+                </a>
+                <a href="https://wa.me/5581986181646">
+                    <img src="img/whatsapp.svg" alt="icone do whatsapp">
+                </a>
+            </div>
+
+        </div>
+        <div class="nav-cabecalho">
+                <nav class="navbar">
+                    <ul class="nav-links">
+                        <div class="logo">
+                            <img src="img/logoColegioMenezes.svg" alt="Logo Colegiomenezes1">
+                        </div>
+                        
+                        <li><a href="index.html" class="active">Início</a></li>
+                        <li><a href="html/quemsomos.html">Quem Somos</a></li>
+                        <li class="dropdown">
+                            <a href="html/educacaoinfantil.html">Educação Infantil </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Ensino Fundamental
+                                <img src="img/seta.svg" alt="icone seta">
+                            </a>
+
+                
+                            <ul class="dropdown-menu">
+                                <li><a href="html/fundamental1.html">Ensino Fundamental I</a></li>
+                                <li><a href="html/fundamental2.html">Ensino Fundamental II</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="html/ensinomedio.html">Ensino Médio</a></li>
+                        <li><a href="html/eventos.html">Eventos</a></li>
+                        <li><a href="html/estrutura.html">Estrutura</a></li>
+                        <li><a href="html/matricule-se.html">Pré-Matricula</a></li>                        
+                    </ul>
+                </nav>
+                
+         
+        </div>
+    </header>
+    <section class="carrossel">
+        <div class="slider">
+            <div class="slide">
+                <img src="img/bannermatriculas.svg" alt="Imagem com anúncio de matrículas">
+            </div>
+            <div class="slide">
+                <img src="img/FeraEnem.jpg" alt="Imagem do Fera Enem">
+            </div>
+            <div class="slide">
+                <img src="img/bannermatriculas.svg" alt="Imagem com anúncio de matrículas">
+            </div>
+            <div class="slide">
+                <img src="img/FeraEnem.jpg" alt="Imagem do Fera Enem">
+            </div>
+        </div>
+
+        <!-- Botões de navegação manual -->
+        <div class="manual-navigation">
+            <span class="manual-btn" onclick="moveSlide(0)"></span>   
+            <span class="manual-btn" onclick="moveSlide(1)"></span>   
+            <span class="manual-btn" onclick="moveSlide(2)"></span>   
+            <span class="manual-btn" onclick="moveSlide(3)"></span>   
+        </div>
+    </section>
+ <!-- COMECEM A PARTIR DAQUI(FASES DO SEU FILHO)-->
+
+        <section class="fases-educacionais">
+            <h2>Para Cada Fase do Seu Filho</h2>
+            <div class="fases-container">
+                <div class="fase">
+                    <img src="img/EdInfantil.svg" alt="Educação Infantil" class="imagem-fase">
+                    <h3>Educação Infantil</h3>
+                    <a href="html/educacaoinfantil.html" class="btn-ver-mais">Ver mais</a>
+                </div>
+                <div class="fase">
+                    <img src="img/Fundamental1.svg" alt="Ensino Fundamental I" class="imagem-fase">
+                    <h3>Ensino Fundamental I</h3>
+                    <a href="html/fundamental1.html" class="btn-ver-mais">Ver mais</a>
+                </div>
+                <div class="fase">
+                    <img src="img/Fundamental2.svg" alt="Ensino Fundamental II" class="imagem-fase">
+                    <h3>Ensino Fundamental II</h3>
+                    <a href="html/fundamental2.html" class="btn-ver-mais">Ver mais</a>
+                </div>
+                <div class="fase">
+                    <img src="img/EnsinoMedio.svg" alt="Ensino Médio" class="imagem-fase">
+                    <h3>Ensino Médio</h3>
+                    <a href="html/ensinomedio.html" class="btn-ver-mais">Ver mais</a>
+                </div>
+            </div>
+        </section>
+        
+            <!--VIDEO COLEGIO MENEZES-->
+        <section class="chamada-final">
+            <div>
+                <video id="meuVideo" class="video-promo" autoplay loop muted playsinline>
+                    <source src="videos/VideoColegiomenezes1.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                  </video>
+            </div>
+            <div class="video-texto-ancora">
+                <p class="video-texto">Venha se formar no <span style="color: #4781FF;">Colégio Menezes I</span>. Aqui é mais que uma escola, uma grande família!</p>
+                <a href="https://wa.me/5581986181646" class="btn-matricule-se">Matricule-se aqui</a>
+            </div>
+        </section>
+
+
+            <section id="diferenciais">
+                <!-- Título com linha amarela -->
+                <div class="titulo-container">
+                    <h1>Nossos Diferenciais</h1>
+                    <div class="linha-amarela"></div>
+                </div>
+                <h1>No Colégio Menezes I, acreditamos que a educação vai além da sala de aula! Oferecemos um ambiente completo para o desenvolvimento dos nossos alunos, garantindo qualidade de ensino e uma experiência enriquecedora. Confira alguns dos nossos diferenciais:</h1>
+        
+                <!-- Grid com os diferenciais -->
+                <div class="grid-diferenciais">
+                    <div class="diferencial">
+                        <img src="img/AprendizadoCriativo.svg" alt="Aprendizado Criativo">
+                        <div class="texto">
+                            <h2>Aprendizado Criativo</h2>
+                            <p>Aulas lúdicas e atividades sensoriais para aprendizado instantiivo. Através de jogos e dinâmicas, o estudo se torna mais envolvente e significativo.</p>
+                        </div>
+                    </div>
+        
+                    <div class="diferencial">
+                        <img src="img/AtividadesExtracurriculares.svg" alt="Atividades Extracurriculares">
+                        <div class="texto">
+                            <h2>Atividades Extracurriculares</h2>
+                            <p>Além do ensino de excelência, disponibilizamos atividades como ballet clássico, karatê, natação e eventos culturais, enriquecendo a experiência dos alunos.</p>
+                        </div>
+                    </div>
+        
+                    <div class="diferencial">
+                        <img src="img/EquipeQualificada.svg" alt="Equipe Qualificada">
+                        <div class="texto">
+                            <h2>Equipe Qualificada</h2>
+                            <p>Nossa equipe é formada por profissionais especializados, sempre prontos para atender às necessidades dos alunos e oferecer suporte durante toda a jornada de aprendizado.</p>
+                        </div>
+                    </div>
+        
+                    <div class="diferencial">
+                        <img src="img/SegurançaeBemestar.svg" alt="Segurança e Bem-estar">
+                        <div class="texto">
+                            <h2>Segurança e Bem-estar</h2>
+                            <p>A segurança dos nossos alunos é prioridade! Nosso ambiente é monitorado por câmeras, garantindo um espaço seguro e acolhedor para todos.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Nossa Estrutura-->
+                <section class="carrossel-estrutura">
+                    <div class="titulo-botao-estrutura">
+                        <div class="titulo-container">
+                            <h1>Nossa Estrutura</h1>
+                            <div class="linha-amarela-estrutura"></div>
+                            <!--colocar o botao ver mais aqui-->
+                        </div>
+                        <div>
+                            <a href="html/estrutura.html" class="botao-azul">Ver Mais</a>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Slider main container -->
+                    <div class="carrossel__container">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+            
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="img/imagem-laboratorio.svg" alt="imagem do laboratorio" class="imagem-estrutura">
+                                    <p class="paragrafo-estrutura">Laboratório</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img-biblioteca.svg" alt="imagem da biblioteca" class="imagem-estrutura">
+                                    <p class="paragrafo-estrutura">Biblioteca</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img-quadra.svg" alt="imagem da Quadra poliesportiva" class="imagem-estrutura">
+                                    <p class="paragrafo-estrutura">Quadra Esportiva</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/img-karate.svg" alt="imagem da aula de karate" class="imagem-estrutura">
+                                    <p class="paragrafo-estrutura">Aulas de Karate</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/imagem-laboratorio.svg" alt="imagem do laboratorio" class="imagem-estrutura">
+                                    <p class="paragrafo-estrutura">Laboratório</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/imagem-laboratorio.svg" alt="imagem do laboratorio" class="imagem-estrutura">
+                                    <p class="paragrafo-estrutura">Laboratório</p>
+                                </div>
+                            </div>
+            
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+
+            </section>
+
+            <!--Nossos Eventos-->
+            <section class="carrossel-estrutura carrossel-eventos">
+                <div class="titulo-botao-estrutura">
+                    <div class="titulo-container">
+                        <h1>Nossos Eventos</h1>
+                        <div class="linha-amarela-estrutura"></div>
+                        <!--colocar o botao ver mais aqui-->
+                    </div>
+                    <div>
+                        <a href="html/eventos.html" class="botao-azul">Ver Mais</a>
+
+                    </div>
+                </div>
+                <!-- Slider main container -->
+                <div class="carrossel__container">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+        
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/img-turmaManha.svg" alt="imagem do laboratorio" class="imagem-eventos">
+                                <p class="paragrafo-eventos">Turma Manhã enalteceu a inovação na Feira de Ciências: um momento mágico de descoberta e aprendizado! Com experiências simples e interativas, as crianças exploram o mundo ao seu redor de forma lúdica e divertida.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/img-EnsinoMedio.svg" alt="imagem da biblioteca" class="imagem-eventos">
+                                <p class="paragrafo-eventos">Ensino Médio Feira de Ciências: estimula a curiosidade, a criatividade e o pensamento crítico dos alunos. Através de projetos inovadores e experimentos práticos.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/img-Direção.svg" alt="imagem da Quadra poliesportiva" class="imagem-eventos">
+                                <p class="paragrafo-eventos">A Direção e Coordenação do Colégio Menezes I, agradece também a vocês professores, que são grandes construtores e, que oferecem a chave do conhecimento e ajudam os alunos a se prepararem para o futuro. </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/img-turmaManha.svg" alt="imagem do laboratorio" class="imagem-eventos">
+                                <p class="paragrafo-eventos">Turma Manhã enalteceu a inovação na Feira de Ciências: um momento mágico de descoberta e aprendizado! Com experiências simples e interativas, as crianças exploram o mundo ao seu redor de forma lúdica e divertida.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/img-EnsinoMedio.svg" alt="imagem da biblioteca" class="imagem-eventos">
+                                <p class="paragrafo-eventos">Ensino Médio Feira de Ciências: estimula a curiosidade, a criatividade e o pensamento crítico dos alunos. Através de projetos inovadores e experimentos práticos.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/img-Direção.svg" alt="imagem da Quadra poliesportiva" class="imagem-eventos">
+                                <p class="paragrafo-eventos">A Direção e Coordenação do Colégio Menezes I, agradece também a vocês professores, que são grandes construtores e, que oferecem a chave do conhecimento e ajudam os alunos a se prepararem para o futuro. </p>
+                            </div>
+                        </div>
+        
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+        </section>
+
+
+            <!-- formando talentos -->
+                
+                <section class="formando-talentos">
+                    </div>
+                    <div class="titulo-talentos-container">
+                    <h2 class="reveal">FORMANDO TALENTOS</h2>
+                    </div>
+                    <div class="talentos-container">
+                        <div class="talentos-box reveal">
+                            <div class="contagem-numero" id="contagem-anos">+0</div>
+                            <p>Anos de Experiência</p>
+                        </div>
+                        <div class="talentos-box reveal">
+                            <div class="contagem-numero" id="contagem-alunos">+0</div>
+                            <p>Alunos Formados</p>
+                        </div>
+                    </div>
+                </section>
+            
+
+            <!-- formando talentos -->
+
+            <!--Iniciando Google maps + formulario-->
+          <section class="map-formulario">
+            <div class="mapBox">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.8112101692905!2d-34.929456224050206!3d-8.018394580029051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19ea7f8910ed%3A0x2478d7f530506635!2sCol%C3%A9gio%20Menezes!5e0!3m2!1spt-PT!2sbr!4v1742236276550!5m2!1spt-PT!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!--FIM DO MAPS-->
+
+            <!--COMEÇO DO FORMULARIO-->
+            <div>
+                <h1 class="titulo-formulario">Entre Em Contato</h1>
+                <form action="./php/enviar.php" method="POST" class="form">
+                    <label for="name" class="label-formulario">Nome:</label>
+                    <input type="text" name="name" class="input-formulario" required>
+                    <label for="email" class="label-formulario">Email:</label>
+                    <input type="email" name="email" class="input-formulario" required>
+                    <label for="message" class="label-formulario">Mensagem:</label>
+                    
+                    <textarea  name="message" class="textarea-formulario" placeholder="Escreva Aqui" required></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                
+                    <button type="submit" class="button-formulario">Enviar</button>
+               </form>
+              
+
+            </div>
+
+            
+          </section>
+             
+      
+        <!--FOOTER-->
+        <footer>
+            <section class="footer1">
+                <div id="footer_content">
+                    <div id="footer_contacts">
+                        <div class="collun-footer">
+                            <div class="LogoFooter"> <img src="img/logoColegioMenezes.svg" alt="Logo do Colegio menezes1"></div>
+                        </div>
+                        <div class="collun-footer">
+                            <h3>Sobre nós</h3>
+                            <p>Somos o Colégio Menezes, dedicados à educação de qualidade que molda futuros promissores.</p>
+                        </div>
+                        <div class="collun-footer">
+                            <h3>Sede</h3>
+                            <p>R. Carnaíba, 64 - Nova Descoberta, Recife - PE, 52090-121</p>
+                        </div>
+                        <div class="collun-footer">
+                            <h3>Entre em contato</h3>
+                            <div id="footer_social_media">
+                                <a href="https://www.facebk.com/colegiomenezes1/" class="footer-link" id="facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/colegiomenezes1/" class="footer-link" id="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://wa.me/5581986181646" class="footer-link" id="whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Faixa azul -->
+                <div id="footer_blue_stripe">
+                    <p>&#169; Todos os direitos reservados</p>
+                </div>
+            </section>
+        </footer>
+
+        <!--FOOTER-->
+
+        <script src="javascript/script.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        
+        <!--função da seta do carrossel-->
+        <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 4,
+            loop: true, // Faz o carrossel rodar infinitamente
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        clickable: true, // Permite clicar nos pontos de paginação
+    },
+            
+        });
+
+    </script>
+    <script>
+        const video = document.getElementById("meuVideo");
+      
+        // Impede que o usuário pause o vídeo
+        video.addEventListener("pause", () => {
+          video.play();
+        });
+      
+        // Impede a pausa ao clicar no vídeo
+        video.addEventListener("click", (event) => {
+          event.preventDefault();
+          video.play();
+        });
+      </script>
+
+      <!-- WHATSAP FLUTUANTE-->
+      <a href="https://wa.me/5581986181646" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+</body>
+</html>

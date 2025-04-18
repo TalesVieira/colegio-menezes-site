@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Menezes I</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/matricule-se.css">
+    <link rel="icon" type="image/png" href="../img/iconedapagina.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+   
+      
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="topo-cabecalho">
+            <div class="contatos">
+                <img src="../img/telephone.svg" alt="icone telefone de contato">
+                <span class="contato-info">3442-4767</span>
+                <img src="../img/envelope.svg" alt="icone email de contato">
+                <span class="contato-info">email/Colegiomenezes1@hotmail.com</span>
+            </div>
+            <div class="social-icones">
+                <a href="https://www.facebook.com/colegiomenezes1/">
+                    <img src="../img/facebook.svg" alt="icone do facebook">
+                </a>
+                <a href="https://www.instagram.com/colegiomenezes1/">
+                    <img src="../img/instagram.svg" alt="icone do instagram">
+                </a>
+                <a href="https://wa.me/5581986181646">
+                    <img src="../img/whatsapp.svg" alt="icone do whatsapp">
+                </a>
+            </div>
+        </div>
+        <div class="nav-cabecalho">
+            <nav class="navbar">
+              <div class="logo">
+                <img src="../img/logoColegioMenezes.svg" alt="Logo Colegiomenezes1">
+              </div>
+              <ul class="nav-links">
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="../html/quemsomos.html">Quem Somos</a></li>
+                <li class="dropdown">
+                  <a href="../html/educacaoinfantil.html">Educação Infantil</a>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Ensino Fundamental
+                    <img src="../img/seta.svg" alt="icone seta">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../html/fundamental1.html">Ensino Fundamental I</a></li>
+                    <li><a href="../html/fundamental2.html">Ensino Fundamental II</a></li>
+                  </ul>
+                </li>
+                <li><a href="../html/ensinomedio.html">Ensino Médio</a></li>
+                <li><a href="../html/eventos.html">Eventos</a></li>
+                <li><a href="../html/estrutura.html">Estrutura</a></li>
+                <li><a href="../html/matricule-se.html" class="active">Pré-Matricula</a></li>
+              </ul>
+            </nav>
+          </div>
+          
+    </header>
+
+    <main class="main-matricula">
+        <section class="formulario-matricula">
+            <div class="container-form">
+                <h2>Formulário de Pré-Matrícula</h2>
+                <form action="../php/salvar.php" method="POST">
+                    <!-- DADOS DO ALUNO -->
+                    <fieldset>
+                        <legend>Dados do Aluno</legend>
+                        <div class="form-group">
+                            <label for="nome-aluno">Nome Completo*</label>
+                            <input type="text" id="nome-aluno" name="nome-aluno" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nascimento">Data de Nascimento*</label>
+                            <input type="date" id="nascimento" name="nascimento" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="documento">CPF</label>
+                            <input type="text" id="documento" name="documento" required>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="email-aluno">E-mail(Opcional)</label>
+                            <input type="email" id="email-aluno" name="email-aluno">
+                        </div>
+                    </fieldset>
+
+                    <!-- DADOS DO RESPONSÁVEL -->
+                    <fieldset>
+                        <legend>Dados do Responsável</legend>
+                        <div class="form-group">
+                            <label for="nome-responsavel">Nome Completo*</label>
+                            <input type="text" id="nome-responsavel" name="nome-responsavel" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="documento-responsavel">CPF</label>
+                            <input type="text" id="documento-responsavel" name="documento-responsavel" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nascimento-responsavel">Data de Nascimento*</label>
+                            <input type="date" id="nascimento-responsavel" name="nascimento-responsavel" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone-responsavel">Telefone/WhatsApp*</label>
+                            <input type="tel" id="telefone-responsavel" name="telefone-responsavel" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-responsavel">E-mail*</label>
+                            <input type="email" id="email-responsavel" name="email-responsavel" required>
+                        </div>
+                    </fieldset>
+
+                    <!-- DETALHES DA MATRÍCULA -->
+                    <fieldset>
+                        <legend>Detalhes da Matrícula</legend>
+                        <div class="form-group">
+                            <label for="serie">Série/Ano Desejado*</label>
+                            <select id="serie" name="serie" required>
+                                <option value="Berçário (Ensino Infantil)">Berçário (Ensino Infantil)</option>
+                                <option value="Maternal I (Ensino Infantil)">Maternal I (Ensino Infantil)</option>
+                                <option value="Maternal II (Ensino Infantil)">Maternal II (Ensino Infantil)</option>
+                                <option value="Pré I (Ensino Infantil)">Pré I (Ensino Infantil)</option>
+                                <option value="Pré II (Ensino Infantil)">Pré II (Ensino Infantil)</option>
+                                <option value="1º Ano (Fundamental I)">1º Ano (Fundamental I)</option>
+                                <option value="2º Ano (Fundamental I)">2º Ano (Fundamental I)</option>
+                                <option value="3º Ano (Fundamental I)">3º Ano (Fundamental I)</option>
+                                <option value="4º Ano (Fundamental I)">4º Ano (Fundamental I)</option>
+                                <option value="5º Ano (Fundamental I)">5º Ano (Fundamental I)</option>
+                                <option value="6º Ano (Fundamental II)">6º Ano (Fundamental II)</option>
+                                <option value="7º Ano (Fundamental II)">7º Ano (Fundamental II)</option>
+                                <option value="8º Ano (Fundamental II)">8º Ano (Fundamental II)</option>
+                                <option value="9º Ano (Fundamental II)">9º Ano (Fundamental II)</option>
+                                <option value="1º Ano (Ensino Médio)">1º Ano (Ensino Médio)</option>
+                                <option value="2º Ano (Ensino Médio)">2º Ano (Ensino Médio)</option>
+                                <option value="3º Ano (Ensino Médio)">3º Ano (Ensino Médio)</option>
+                            </select>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <label>Turno*</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="turno" value="Manhã" required> Manhã</label>
+                                <label><input type="radio" name="turno" value="Tarde"> Tarde</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Já estudou no colégio antes?*</label>
+                            <div class="radio-group">
+                                <label><input type="radio" name="estudou-antes" value="Sim" required> sim</label>
+                                <label><input type="radio" name="estudou-antes" value="Não"> não</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Como conheceu a escola?*</label>
+                            <div class="checkbox-group">
+                                <label><input type="radio" name="conheceu-escola" value="Redes Sociais" required> Redes Sociais</label>
+                                <label><input type="radio" name="conheceu-escola" value="Indicação de Amigos"> Indicação de Amigos</label>
+                                <label><input type="radio" name="conheceu-escola" value="Anúncio Online"> Anúncio Online</label>
+                                <label><input type="radio" name="conheceu-escola" value="Outros" id="outro-option"> Outros</label>
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+
+                    <input type="hidden" name="_next" value="obrigado.html">
+                    <button type="submit" class="btn-enviar">Enviar Matrícula</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer2">
+            <div id="footer_content1">
+                <div id="footer_contacts">
+                    <div class="collun-footer">
+                        <div class="LogoFooter"> <img src="../img/logoColegioMenezes.svg" alt="Logo do Colegio menezes1"></div>
+                    </div>
+                    <div class="collun-footer1">
+                        <h3>Sobre nós</h3>
+                        <p>Somos o Colégio Menezes, dedicados à educação de qualidade que molda futuros promissores.</p>
+                    </div>
+                    <div class="collun-footer1">
+                        <h3>Sede</h3>
+                        <p>R. Carnaíba, 64 - Nova Descoberta, Recife - PE, 52090-121</p>
+                    </div>
+                    <div class="collun-footer1">
+                        <h3>Entre em contato</h3>
+                        <div id="footer_social_media">
+                            <a href="https://www.facebook.com/colegiomenezes1/
+                            " class="footer-link" id="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/colegiomenezes1/
+                            " class="footer-link" id="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/5581986181646" class="footer-link" id="whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Faixa azul -->
+            <div id="footer_blue_stripe1">
+                <p>&#169; Todos os direitos reservados</p>
+            </div>
+        </section>
+    </footer>
+    <a href="https://wa.me/5581986181646" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <script src="https://unpkg.com/imask"></script>
+<script>
+  // Máscara CPF
+  const cpfAluno = IMask(document.getElementById('documento'), { mask: '000.000.000-00' });
+  const cpfResponsavel = IMask(document.getElementById('documento-responsavel'), { mask: '000.000.000-00' });
+
+  // Máscara Telefone
+  
+  const telResponsavel = IMask(document.getElementById('telefone-responsavel'), {
+    mask: '(00) 00000-0000'
+  });
+
+  // Mostrar campo "Outro" quando selecionado
+  const outroRadio = document.getElementById('outro-option');
+  const outroTexto = document.getElementById('outro-texto');
+
+  outroRadio.addEventListener('change', () => {
+    outroTexto.style.display = 'block';
+    outroTexto.required = true;
+  });
+
+  // Ocultar se outro não estiver selecionado
+  const conheceuRadios = document.querySelectorAll('input[name="conheceu-escola"]');
+  conheceuRadios.forEach(radio => {
+    if (radio !== outroRadio) {
+      radio.addEventListener('change', () => {
+        outroTexto.style.display = 'none';
+        outroTexto.required = false;
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
