@@ -30,7 +30,10 @@ body{
 }
 
 
-.linha-amarela {
+.linha-amarela-educacao {
+  display: flex;
+  justify-content: center;
+  margin-left: 30em;
   width: 30%; 
   height: 5px;
   background-color: var(--amarelo);

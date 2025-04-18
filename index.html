@@ -142,7 +142,7 @@
                 <!-- Título com linha amarela -->
                 <div class="titulo-container">
                     <h1>Nossos Diferenciais</h1>
-                    <div class="linha-amarela"></div>
+                    <div class="linha-amarela-principal"></div>
                 </div>
                 <h1>No Colégio Menezes I, acreditamos que a educação vai além da sala de aula! Oferecemos um ambiente completo para o desenvolvimento dos nossos alunos, garantindo qualidade de ensino e uma experiência enriquecedora. Confira alguns dos nossos diferenciais:</h1>
         
@@ -324,20 +324,23 @@
 
             <!--COMEÇO DO FORMULARIO-->
             <div>
-                <h1 class="titulo-formulario">Entre Em Contato</h1>
-                <form action="./php/enviar.php" method="POST" class="form">
+                <form action="https://formsubmit.co/talesvieira2005@gmail.com" method="POST" class="form">
                     <label for="name" class="label-formulario">Nome:</label>
                     <input type="text" name="name" class="input-formulario" required>
+                
                     <label for="email" class="label-formulario">Email:</label>
                     <input type="email" name="email" class="input-formulario" required>
+                
                     <label for="message" class="label-formulario">Mensagem:</label>
-                    
-                    <textarea  name="message" class="textarea-formulario" placeholder="Escreva Aqui" required></textarea>
+                    <textarea name="message" class="textarea-formulario" placeholder="Escreva Aqui" required></textarea>
+                
+                    <!-- Configurações extras -->
                     <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://localhost/colegio-menezes/html/obrigado.html">
                 
                     <button type="submit" class="button-formulario">Enviar</button>
-               </form>
-              
+                </form>
+                
 
             </div>
 

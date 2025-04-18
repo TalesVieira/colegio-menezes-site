@@ -323,7 +323,7 @@ body {
   margin-bottom: 10px;
 }
 
-.linha-amarela {
+.linha-amarela-principal {
   width: 350px;
   height: 5px;
   background-color: #ffd700; /* Amarelo */
@@ -669,4 +669,53 @@ footer {
 .whatsapp-float img {
   width: 40px;
   height: 40px;
+}
+
+.linha-amarela-educacao {
+  display: flex;
+  justify-content: center;
+  margin-left: 30em;
+  width: 30%; 
+  height: 5px;
+  background-color: var(--amarelo);
+  margin: 0 auto;
+}
+
+.linha-amarela-fundamental {
+  display: flex;
+  justify-content: center;
+  margin-left: 30em;
+  width: 35%; 
+  height: 5px;
+  background-color: var(--amarelo);
+  margin: 0 auto;
+}
+
+.linha-amarela-ensinomedio {
+  display: flex;
+  justify-content: center;
+  margin-left: 30em;
+  width: 22%; 
+  height: 5px;
+  background-color: var(--amarelo);
+  margin: 0 auto;
+}
+
+.linha-amarela-estrutura{
+  display: flex;
+  justify-content: center;
+  margin-left: 30em;
+  width: 28%; 
+  height: 5px;
+  background-color: var(--amarelo);
+  margin: 0 auto;
+
+}
+
+.amarela-eventos{
+  display: flex;
+  justify-content: left;
+  width: 8%; 
+  height: 5px;
+  background-color: var(--amarelo);
 }
