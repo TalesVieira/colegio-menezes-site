@@ -53,7 +53,7 @@ ScrollReveal().reveal(".formando-talentos .reveal", {
       const contagemAnos = document.getElementById("contagem-anos");
       const contagemAlunos = document.getElementById("contagem-alunos");
 
-      animarContagem(contagemAnos, 32, 1000); // Contagem de 0 a 10 em 1 segundo
+      animarContagem(contagemAnos, 31, 1000); // Contagem de 0 a 10 em 1 segundo
       animarContagem(contagemAlunos, 600, 2000); // Contagem de 0 a 100 em 2 segundos
     }
   },
