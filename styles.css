@@ -232,17 +232,24 @@ body {
 }
 
 .btn-ver-mais {
-  background-color: var(--vermelho); /*cor padrão*/
+  background-color: var(--vermelho); /* cor padrão */
   color: var(--branco);
   padding: 0.5rem 1rem;
-  border-radius: 4px;
+  border-radius: 20px;
   text-decoration: none;
   display: inline-block;
   position: relative;
-  z-index: 3; /* Garante que o botão fique acima da faixa vermelha */ /*a faixa é td agr*/
+  z-index: 3;
   border: var(--branco) solid 2px;
-  border-radius: 20px;
+  
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.btn-ver-mais:hover {
+  background-color: var(--branco); /* cor ao passar o mouse */
+  color: var(--vermelho);
+}
+
 
 .chamada-final {
   display: flex;
@@ -272,6 +279,12 @@ body {
   background: linear-gradient(to right, #4781ff 0%, #0068d1 100%);
   float: left;
   margin-top: 1em;
+  transition: background 0.3s ease, color 0.3s ease; /* Adiciona transição */
+}
+
+.btn-matricule-se:hover {
+  background: linear-gradient(to right, #00c3ff 0%, #0068d1 100%); /* Nova cor ao passar o mouse */
+  color: var(--azul-escuro); /* Exemplo de mudança na cor do texto */
 }
 
 .video-promo {
@@ -522,7 +535,7 @@ body {
 .button-formulario {
   display: block;
   padding: 1rem;
-  background: linear-gradient(to right, #4e82f4 0%, #0068d1 100%);
+  background: linear-gradient(to right, #0068D1 0%, #00356B 100%);
   color: #fff;
   font: inherit;
   text-transform: uppercase;
@@ -535,7 +548,8 @@ body {
 .button-formulario:hover,
 .button-formulario:focus {
   outline: none;
-  background: #09d;
+  background: linear-gradient(to right, #00c3ff 0%, #0068d1 100%);
+    color: var(--azul-escuro);
 }
 
 /*FOOTER*/

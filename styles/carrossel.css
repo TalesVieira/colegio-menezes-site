@@ -53,7 +53,7 @@
    justify-content:space-between;
     align-items: center;
 }
-.botao-azul{
+.botao-azul {
     color: var(--branco);
     text-decoration: none;
     border-radius: 30px;
@@ -63,8 +63,14 @@
     font-weight: 700;
     margin-right: 50px;
     font-family: var(--font-principal);
-    
-}
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .botao-azul:hover {
+    background: linear-gradient(to right, #00c3ff 0%, #0068d1 100%);
+    color: var(--azul-escuro);
+  }
+  
 .imagem-eventos{
     width: 97.5%;
     display: block;
