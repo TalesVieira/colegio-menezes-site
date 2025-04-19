@@ -3,9 +3,9 @@ require_once 'Database.php';
 require_once 'Aluno.php';
 require_once 'Responsavel.php';
 require_once 'DetalhesdaMatricula.php';
-echo '<pre>';
-var_dump($_POST);
-echo '</pre>';
+// echo '<pre>';
+// var_dump($_POST);
+// echo '</pre>';
 
 
 $db = (new Database())->getConnection();
@@ -25,3 +25,5 @@ $detalhes = new DetalhesdaMatricula(
 $aluno->salvar($db);
 $responsavel->salvar($db);
 $detalhes->salvar($db);
+header('Location: ../html/obrigado.html');
+exit;
