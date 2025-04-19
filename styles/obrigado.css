@@ -19,14 +19,18 @@ body{
     align-items: center;
 }
 
-a{
+a {
   color: var(--branco);
   font-weight: 700;
   padding: 1.5rem 1.8rem;
   border-radius: 20px;
   text-decoration: none;
   background: linear-gradient(to right, #dd2553 0%, #921233 100%);
-  float: left;
   margin-top: 1em;
   align-items: center;
+  transition: background 0.3s ease; /* Para uma transição suave */
+}
+
+a:hover {
+  background: linear-gradient(to right, #e6b31e 0%, #c68400 100%);
 }
