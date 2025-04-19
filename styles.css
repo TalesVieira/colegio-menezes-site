@@ -704,12 +704,17 @@ footer {
 .linha-amarela-estrutura{
   display: flex;
   justify-content: center;
-  margin-left: 30em;
+  margin-left: 0;
   width: 28%; 
   height: 5px;
   background-color: var(--amarelo);
   margin: 0 auto;
-
+}
+.linha-amarela-carrossel{
+  width: 280px;
+  height: 5px;
+  background-color: #ffd700; /* Amarelo */
+  margin-left: 0;
 }
 
 .amarela-eventos{
